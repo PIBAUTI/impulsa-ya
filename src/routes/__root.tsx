@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Talleres de ventas, atención al cliente y marketing digital para empresas venezolanas. Resultados desde el primer día. Escríbenos por WhatsApp.",
       },
       { name: "author", content: "IMPULSA" },
-      { property: "og:title", content: "IMPULSA — Formación Comercial de Alto Impacto" },
+      { property: "og:title", content: "IMPULSA — Formación Comercial de Alto Impacto | Venezuela" },
       {
         property: "og:description",
         content:
@@ -87,6 +87,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "IMPULSA — Formación Comercial de Alto Impacto | Venezuela" },
+      { name: "description", content: "IMPULSA offers high-impact sales, customer service, and digital marketing training for Venezuelan businesses." },
+      { property: "og:description", content: "IMPULSA offers high-impact sales, customer service, and digital marketing training for Venezuelan businesses." },
+      { name: "twitter:description", content: "IMPULSA offers high-impact sales, customer service, and digital marketing training for Venezuelan businesses." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6781b821-6a68-4358-9286-dc1cb9878833/id-preview-35e821ae--445a4d21-1145-4c05-a8b5-730642586e5f.lovable.app-1778886517832.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6781b821-6a68-4358-9286-dc1cb9878833/id-preview-35e821ae--445a4d21-1145-4c05-a8b5-730642586e5f.lovable.app-1778886517832.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
