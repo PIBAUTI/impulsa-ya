@@ -614,8 +614,7 @@ function Contacto() {
             <Clock className="h-6 w-6 text-mid" />
             <h3 className="mt-3 font-bold text-navy">Horario de LIS</h3>
             <p className="mt-1 text-sm text-ink/75">
-              Lunes a viernes 8:00 am – 6:00 pm<br />
-              Sábados 9:00 am – 1:00 pm
+              24 horas al día · 7 días a la semana
             </p>
           </div>
         </div>
