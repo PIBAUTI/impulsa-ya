@@ -581,7 +581,7 @@ function Contacto() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-navy text-white px-7 py-4 text-base font-semibold hover:bg-corp transition-colors"
           >
-            <MessageCircle className="h-5 w-5" /> Escríbele a LIS
+            <MessageCircle className="h-5 w-5" /> 💬 Escríbele a LIS ahora
           </a>
           <a
             href={INSTAGRAM_URL}
