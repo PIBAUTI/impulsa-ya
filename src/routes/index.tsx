@@ -324,7 +324,7 @@ function Corporativo() {
             ¿Tienes un equipo comercial o de atención al cliente?
           </h2>
           <p className="mt-4 text-lg text-white/80">
-            Diseñamos el programa exacto para tu empresa. Sin soluciones genéricas.
+            Adaptamos cada programa a la realidad, cultura y necesidades específicas de tu organización. Sin soluciones genéricas. Sin copy-paste.
           </p>
         </div>
 
