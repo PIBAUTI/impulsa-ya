@@ -247,8 +247,23 @@ function Talleres() {
           ))}
         </div>
 
+        {/* Puente hacia corporativo */}
+        <div className="mt-12 rounded-2xl border-2 border-dashed border-navy/30 bg-white p-7 md:p-8 text-center">
+          <p className="text-lg md:text-xl font-bold text-navy max-w-3xl mx-auto">
+            ¿Tienes más de 10 personas en tu equipo? Diseñamos el taller exclusivamente para tu organización.
+          </p>
+          <a
+            href={wa("Hola LIS, tengo un equipo de más de 10 personas y quiero un programa a medida")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-2 rounded-lg border-2 border-navy text-navy px-6 py-3 text-sm font-semibold hover:bg-navy hover:text-white transition-colors"
+          >
+            Quiero un programa a medida <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+
         {/* Pack */}
-        <div className="mt-12 rounded-2xl bg-navy text-white p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div className="mt-8 rounded-2xl bg-navy text-white p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-mid">🎯 Pack 3 talleres</div>
             <h3 className="mt-2 text-2xl md:text-3xl font-extrabold text-white">
@@ -309,7 +324,7 @@ function Corporativo() {
             ¿Tienes un equipo comercial o de atención al cliente?
           </h2>
           <p className="mt-4 text-lg text-white/80">
-            Diseñamos el programa exacto para tu empresa. Sin soluciones genéricas.
+            Adaptamos cada programa a la realidad, cultura y necesidades específicas de tu organización. Sin soluciones genéricas. Sin copy-paste.
           </p>
         </div>
 
@@ -336,6 +351,7 @@ function Corporativo() {
               <s.icon className="h-8 w-8 mx-auto text-white" />
               <div className="mt-3 font-bold text-white">{s.label}</div>
               <div className="mt-1 text-sm text-mid font-semibold">{s.price}</div>
+              <div className="mt-2 text-xs italic text-white/70">Programa diseñado exclusivamente para tu equipo</div>
             </div>
           ))}
         </div>
@@ -524,6 +540,10 @@ function Testimonios() {
           ))}
         </div>
 
+        <p className="mt-8 text-center text-sm text-white/60 max-w-2xl mx-auto italic">
+          Testimonios en proceso de recopilación — próximamente casos reales de nuestros clientes
+        </p>
+
         <div className="mt-12 text-center">
           <a
             href={wa("Hola LIS, quiero ser el próximo caso de éxito de IMPULSA")}
@@ -548,7 +568,10 @@ function Contacto() {
           ¿Listo para impulsar tu empresa?
         </h2>
         <p className="mt-4 text-lg text-ink/75 max-w-2xl mx-auto">
-          LIS te atiende por WhatsApp — respondemos en menos de 2 horas en horario hábil.
+          ¡Contáctanos ahora y tu equipo lo hará así también!
+        </p>
+        <p className="mt-3 text-base text-ink/70 max-w-2xl mx-auto">
+          LIS te atiende por WhatsApp — respondemos en menos de 5 minutos.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -558,7 +581,7 @@ function Contacto() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-navy text-white px-7 py-4 text-base font-semibold hover:bg-corp transition-colors"
           >
-            <MessageCircle className="h-5 w-5" /> Escríbele a LIS
+            <MessageCircle className="h-5 w-5" /> 💬 Escríbele a LIS ahora
           </a>
           <a
             href={INSTAGRAM_URL}
@@ -591,8 +614,7 @@ function Contacto() {
             <Clock className="h-6 w-6 text-mid" />
             <h3 className="mt-3 font-bold text-navy">Horario de LIS</h3>
             <p className="mt-1 text-sm text-ink/75">
-              Lunes a viernes 8:00 am – 6:00 pm<br />
-              Sábados 9:00 am – 1:00 pm
+              24 horas al día · 7 días a la semana
             </p>
           </div>
         </div>
