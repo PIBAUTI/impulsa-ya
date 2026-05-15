@@ -247,8 +247,23 @@ function Talleres() {
           ))}
         </div>
 
+        {/* Puente hacia corporativo */}
+        <div className="mt-12 rounded-2xl border-2 border-dashed border-navy/30 bg-white p-7 md:p-8 text-center">
+          <p className="text-lg md:text-xl font-bold text-navy max-w-3xl mx-auto">
+            ¿Tienes más de 10 personas en tu equipo? Diseñamos el taller exclusivamente para tu organización.
+          </p>
+          <a
+            href={wa("Hola LIS, tengo un equipo de más de 10 personas y quiero un programa a medida")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-2 rounded-lg border-2 border-navy text-navy px-6 py-3 text-sm font-semibold hover:bg-navy hover:text-white transition-colors"
+          >
+            Quiero un programa a medida <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+
         {/* Pack */}
-        <div className="mt-12 rounded-2xl bg-navy text-white p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div className="mt-8 rounded-2xl bg-navy text-white p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-mid">🎯 Pack 3 talleres</div>
             <h3 className="mt-2 text-2xl md:text-3xl font-extrabold text-white">
