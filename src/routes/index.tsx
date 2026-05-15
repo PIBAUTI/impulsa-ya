@@ -351,6 +351,7 @@ function Corporativo() {
               <s.icon className="h-8 w-8 mx-auto text-white" />
               <div className="mt-3 font-bold text-white">{s.label}</div>
               <div className="mt-1 text-sm text-mid font-semibold">{s.price}</div>
+              <div className="mt-2 text-xs italic text-white/70">Programa diseñado exclusivamente para tu equipo</div>
             </div>
           ))}
         </div>
