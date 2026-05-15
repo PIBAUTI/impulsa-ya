@@ -72,20 +72,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "IMPULSA — Formación Comercial de Alto Impacto | Venezuela" },
+      {
+        name: "description",
+        content:
+          "Talleres de ventas, atención al cliente y marketing digital para empresas venezolanas. Resultados desde el primer día. Escríbenos por WhatsApp.",
+      },
+      { name: "author", content: "IMPULSA" },
+      { property: "og:title", content: "IMPULSA — Formación Comercial de Alto Impacto" },
+      {
+        property: "og:description",
+        content:
+          "Capacitación comercial de alto impacto para equipos que quieren resultados reales — desde el primer día.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico" },
     ],
   }),
   shellComponent: RootShell,
