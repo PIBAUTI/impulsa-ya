@@ -540,7 +540,7 @@ function Testimonios() {
           ))}
         </div>
 
-        <p className="mt-8 text-center text-sm text-ink/50 max-w-2xl mx-auto">
+        <p className="mt-8 text-center text-sm text-white/60 max-w-2xl mx-auto italic">
           Testimonios en proceso de recopilación — próximamente casos reales de nuestros clientes
         </p>
 
