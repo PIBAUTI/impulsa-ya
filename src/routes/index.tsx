@@ -568,7 +568,10 @@ function Contacto() {
           ¿Listo para impulsar tu empresa?
         </h2>
         <p className="mt-4 text-lg text-ink/75 max-w-2xl mx-auto">
-          LIS te atiende por WhatsApp — respondemos en menos de 2 horas en horario hábil.
+          ¡Contáctanos ahora y tu equipo lo hará así también!
+        </p>
+        <p className="mt-3 text-base text-ink/70 max-w-2xl mx-auto">
+          LIS te atiende por WhatsApp — respondemos en menos de 5 minutos.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
