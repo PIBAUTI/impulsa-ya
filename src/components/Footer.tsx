@@ -58,6 +58,7 @@ export function Footer() {
             </div>
             <p className="mt-4 text-sm text-white/60">+58 424 267 0624</p>
             <p className="text-sm text-white/60">impulsa.transformaciondigital.us</p>
+            <p className="mt-2 text-sm text-white/80 font-medium">LIS disponible 24/7 — Respuesta en menos de 5 minutos</p>
           </div>
         </div>
 
