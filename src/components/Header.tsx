@@ -54,7 +54,7 @@ export function Header() {
             className="inline-flex items-center gap-2 rounded-lg bg-navy text-white px-4 py-2.5 text-sm font-semibold hover:bg-corp transition-colors"
           >
             <MessageCircle className="h-4 w-4" />
-            Habla con LIS
+            Respondo en 2 min
           </a>
         </nav>
 
@@ -88,7 +88,7 @@ export function Header() {
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-navy text-white px-4 py-3 text-base font-semibold"
             >
               <MessageCircle className="h-5 w-5" />
-              Habla con LIS
+              Respondo en 2 min
             </a>
           </div>
         </div>
