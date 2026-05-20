@@ -12,8 +12,8 @@ import { wa, WA_DEFAULT, INSTAGRAM_URL } from "@/lib/wa";
 import heroTeam from "@/assets/hero-team.jpg";
 import teamGroup from "@/assets/team-group.jpg";
 import juanPino from "@/assets/juan-pino.jpg";
-import lisveronica from "@/assets/lisveronica.jpg";
-import lisbarbara from "@/assets/lisbarbara.jpg";
+import lisveronica from "@/assets/lisveronica.png";
+import lisbarbara from "@/assets/lisbarbara.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -163,7 +163,7 @@ function Talleres() {
       sub: "Atención al cliente de alto impacto",
       desc: "Descubre por qué tus clientes se van y cómo hacer que regresen. Técnicas aplicables desde mañana en tu negocio.",
       duracion: "3 horas",
-      precio: "$35 – $50 USD por persona",
+      precio: "$35 USD por persona",
       cta: "IMPULSA tu atención",
       msg: "Hola LIS, quiero inscribirme al taller El cliente que no vuelve. ¿Cómo procedo?",
       featured: false,
@@ -174,7 +174,7 @@ function Talleres() {
       sub: "Técnicas de venta efectiva",
       desc: "Aprende a vender sin presión y sin guiones robóticos. Técnicas reales que funcionan con el cliente venezolano.",
       duracion: "3 horas",
-      precio: "$35 – $50 USD por persona",
+      precio: "$35 USD por persona",
       cta: "IMPULSA tus ventas",
       msg: "Hola LIS, quiero inscribirme al taller Cierra más esfuérzate menos. ¿Cómo procedo?",
       featured: true,
@@ -185,7 +185,7 @@ function Talleres() {
       sub: "Marketing digital aplicado",
       desc: "Instagram, WhatsApp y Google para atraer clientes locales. Sin agencia. Sin presupuesto enorme.",
       duracion: "4 horas",
-      precio: "$45 – $60 USD por persona",
+      precio: "$45 USD por persona",
       cta: "IMPULSA tu Mercadeo Digital",
       msg: "Hola LIS, quiero inscribirme al taller Tu negocio en digital. ¿Cómo procedo?",
       featured: false,
@@ -267,7 +267,7 @@ function Talleres() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-mid">🎯 Pack 3 talleres</div>
             <h3 className="mt-2 text-2xl md:text-3xl font-extrabold text-white">
-              $100 a $120 USD · Ahorra hasta $30
+              $100 USD por persona · Los 3 talleres
             </h3>
             <p className="mt-1 text-white/80">Inscríbete en los tres talleres y forma a tu equipo completo.</p>
           </div>
@@ -312,9 +312,9 @@ function Corporativo() {
     { icon: BarChart3, title: "Seguimiento 30 días", desc: "Nos aseguramos de que los cambios se sostengan" },
   ];
   const segs = [
-    { icon: Hotel, label: "Hoteles y resorts", price: "desde $1.200 USD" },
-    { icon: ShoppingCart, label: "Cadenas y supermercados", price: "desde $800 USD" },
-    { icon: UtensilsCrossed, label: "Restaurantes y franquicias", price: "desde $500 USD" },
+    { icon: Hotel, label: "Hoteles y resorts", note: "Programas de 1 a 3 días · ROI medible en 30 días" },
+    { icon: ShoppingCart, label: "Cadenas y supermercados", note: "Por tienda o equipo completo · Seguimiento incluido" },
+    { icon: UtensilsCrossed, label: "Restaurantes y franquicias", note: "Desde media jornada · Resultados desde el primer turno" },
   ];
   return (
     <section id="corporativo" className="bg-navy text-white py-20 md:py-24">
@@ -350,7 +350,7 @@ function Corporativo() {
             <div key={s.label} className="rounded-xl bg-white/10 border border-white/10 p-6 text-center">
               <s.icon className="h-8 w-8 mx-auto text-white" />
               <div className="mt-3 font-bold text-white">{s.label}</div>
-              <div className="mt-1 text-sm text-mid font-semibold">{s.price}</div>
+              <div className="mt-2 text-sm text-mid font-semibold">{s.note}</div>
               <div className="mt-2 text-xs italic text-white/70">Programa diseñado exclusivamente para tu equipo</div>
             </div>
           ))}
@@ -377,20 +377,20 @@ function Equipo() {
     {
       img: juanPino,
       name: "Juan Pino",
-      role: "Director y Arquitecto de Programas",
-      bio: "Ingeniero, MBA y Abogado. 25+ años liderando equipos comerciales en Venezuela y LATAM. Schlumberger, Movilnet, CEO de Transformación Digital US.",
+      role: "Consultor Senior y Director de Programas",
+      bio: "Ingeniero, MBA y Abogado. 25+ años liderando equipos comerciales en Venezuela y LATAM. Schlumberger, Movilnet, RCTV, Cirion Tech. y CEO de Transformación Digital US.",
       linkedin: "https://www.linkedin.com/",
     },
     {
       img: lisveronica,
       name: "Lisverónica Ramos",
-      role: "Ejecutiva Comercial y Co-facilitadora",
+      role: "Consultora Comercial y Facilitadora",
       bio: "TSU Mercadotecnia. Especialista en estrategias comerciales y desarrollo de equipos de venta. Experiencia en cadenas nacionales y marcas de lujo.",
     },
     {
       img: lisbarbara,
       name: "Lisbárbara Ramos",
-      role: "Coordinadora Local y Co-facilitadora",
+      role: "Consultora de Servicio y Facilitadora",
       bio: "TSU Mercadotecnia. 15+ años gestionando equipos de atención al cliente y operaciones comerciales en Margarita.",
     },
   ];
@@ -501,7 +501,7 @@ function PorQue() {
 function Testimonios() {
   const t = [
     {
-      text: "Después del taller, mi equipo de ventas cerró un 40% más en el primer mes. No esperaba resultados tan rápidos.",
+      text: "Después del taller, mi equipo de ventas cerró un 23% más en el primer mes. No esperaba resultados tan rápidos.",
       name: "Carlos M.",
       role: "Gerente Comercial",
     },
@@ -540,9 +540,6 @@ function Testimonios() {
           ))}
         </div>
 
-        <p className="mt-8 text-center text-sm text-white/60 max-w-2xl mx-auto italic">
-          Testimonios en proceso de recopilación — próximamente casos reales de nuestros clientes
-        </p>
 
         <div className="mt-12 text-center">
           <a
