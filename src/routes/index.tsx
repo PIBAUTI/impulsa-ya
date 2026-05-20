@@ -568,7 +568,7 @@ function Contacto() {
           ¡Contáctanos ahora y tu equipo lo hará así también!
         </p>
         <p className="mt-3 text-base text-ink/70 max-w-2xl mx-auto">
-          LIS te atiende por WhatsApp — respondemos en menos de 5 minutos.
+          LIS te atiende por WhatsApp — respondemos en menos de 2 minutos.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -578,7 +578,7 @@ function Contacto() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-navy text-white px-7 py-4 text-base font-semibold hover:bg-corp transition-colors"
           >
-            <MessageCircle className="h-5 w-5" /> 💬 Escríbele a LIS ahora
+            <MessageCircle className="h-5 w-5" /> 💬 Respondo en 2 minutos
           </a>
           <a
             href={INSTAGRAM_URL}
@@ -602,17 +602,32 @@ function Contacto() {
           <div className="rounded-xl bg-soft p-6">
             <Phone className="h-6 w-6 text-mid" />
             <h3 className="mt-3 font-bold text-navy">Teléfono</h3>
-            <p className="mt-1 text-sm text-ink/75">+58 424 267 0624</p>
+            <a
+              href={WA_DEFAULT}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-block text-sm text-navy font-semibold hover:text-mid transition-colors"
+            >
+              +58 424 267 0624
+            </a>
             <Globe className="h-6 w-6 text-mid mt-4" />
             <h3 className="mt-3 font-bold text-navy">Web</h3>
-            <p className="mt-1 text-sm text-ink/75">impulsa.transformaciondigital.us</p>
+            <a
+              href="https://www.impulsa.com.ve"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-block text-sm text-navy font-semibold hover:text-mid transition-colors"
+            >
+              www.impulsa.com.ve
+            </a>
           </div>
           <div className="rounded-xl bg-soft p-6">
             <Clock className="h-6 w-6 text-mid" />
-            <h3 className="mt-3 font-bold text-navy">Horario de LIS</h3>
+            <h3 className="mt-3 font-bold text-navy">Atención inmediata</h3>
             <p className="mt-1 text-sm text-ink/75">
               24 horas al día · 7 días a la semana
             </p>
+            <p className="mt-2 text-xs italic text-ink/60">Atendemos en pocos minutos</p>
           </div>
         </div>
       </div>
