@@ -31,8 +31,10 @@ function Index() {
         <Hero />
         <Problem />
         <Talleres />
+        <Catalogo />
         <Corporativo />
         <Equipo />
+        <Filosofia />
         <PorQue />
         <Testimonios />
         <Contacto />
