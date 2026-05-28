@@ -93,7 +93,7 @@ function Hero() {
         <div className="relative mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl">
           {[
             { k: "25+ años", v: "de experiencia comercial en Venezuela" },
-            { k: "3 programas", v: "de formación especializados" },
+            { k: "Programas", v: "de formación especializada" },
             { k: "Resultados", v: "desde el primer día" },
           ].map((m) => (
             <div
