@@ -4,6 +4,7 @@ import {
   CheckCircle2, XCircle, Search, ClipboardList, Rocket, BarChart3,
   Hotel, ShoppingCart, UtensilsCrossed, Quote, MapPin, Phone, Globe,
   Clock, Instagram, MessageCircle, Linkedin, Sparkles,
+  BookOpen, Eye, Compass, Scale, GraduationCap, Palmtree,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
