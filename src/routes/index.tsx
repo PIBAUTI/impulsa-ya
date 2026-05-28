@@ -681,6 +681,80 @@ function Equipo() {
   );
 }
 
+/* ---------------- FILOSOFÍA (Misión, Visión, Valores) ---------------- */
+function Filosofia() {
+  const valores = [
+    {
+      title: "Resultados sobre diplomas",
+      desc: "No medimos el éxito por horas de clase sino por lo que cambia en el negocio del cliente. Si no hay resultado, fallamos nosotros.",
+    },
+    {
+      title: "Honestidad comercial",
+      desc: "No vendemos lo que no podemos entregar. No prometemos transformaciones mágicas. Prometemos herramientas reales a aplicar con disciplina.",
+    },
+    {
+      title: "Crecimiento continuo",
+      desc: "Le exigimos a nuestros clientes que mejoren. Nos exigimos lo mismo. IMPULSA se actualiza, aprende y evoluciona con el mercado.",
+    },
+    {
+      title: "Cercanía sin perder profesionalismo",
+      desc: "Conectamos como personas. Entregamos con excelencia.",
+    },
+  ];
+  return (
+    <section id="filosofia" className="bg-navy text-white py-20 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl">
+          <span className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur px-3 py-1 text-xs font-semibold tracking-wide uppercase">
+            <Compass className="h-3.5 w-3.5" /> Nuestra filosofía
+          </span>
+          <h2 className="mt-4 text-3xl md:text-5xl font-extrabold text-white">Quiénes somos por dentro</h2>
+          <p className="mt-4 text-lg text-white/80">
+            Lo que nos mueve, hacia dónde vamos y los principios con los que trabajamos todos los días.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-mid text-navy">
+              <Target className="h-6 w-6" />
+            </div>
+            <h3 className="mt-5 text-2xl font-extrabold text-white">Misión</h3>
+            <p className="mt-3 text-white/85 leading-relaxed">
+              Transformar equipos comerciales en generadores de crecimiento real, a través de capacitación y mentoría orientadas a resultados y aplicables desde el primer día.
+            </p>
+          </div>
+          <div className="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-mid text-navy">
+              <Eye className="h-6 w-6" />
+            </div>
+            <h3 className="mt-5 text-2xl font-extrabold text-white">Visión</h3>
+            <p className="mt-3 text-white/85 leading-relaxed">
+              Ser la consultora de formación comercial de referencia en Venezuela para 2028, reconocida por transformar el desempeño de empresas y equipos mediante metodologías de alto impacto, optimización de procesos y resultados medibles, formando una nueva generación de profesionales comerciales y de servicio altamente efectivos.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <div className="flex items-center gap-3">
+            <Scale className="h-6 w-6 text-mid" />
+            <h3 className="text-2xl font-extrabold text-white">Valores</h3>
+          </div>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
+            {valores.map((v, i) => (
+              <div key={v.title} className="rounded-2xl bg-white/10 border border-white/10 p-6 hover:bg-white/[0.13] transition-colors">
+                <div className="text-xs font-bold text-mid uppercase tracking-wider">0{i + 1}</div>
+                <h4 className="mt-2 text-lg font-bold text-white">{v.title}</h4>
+                <p className="mt-2 text-white/80 leading-relaxed text-sm">{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ---------------- POR QUÉ ---------------- */
 function PorQue() {
   const rows = [
