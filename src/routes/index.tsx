@@ -4,6 +4,7 @@ import {
   CheckCircle2, XCircle, Search, ClipboardList, Rocket, BarChart3,
   Hotel, ShoppingCart, UtensilsCrossed, Quote, MapPin, Phone, Globe,
   Clock, Instagram, MessageCircle, Linkedin, Sparkles,
+  BookOpen, Eye, Compass, Scale, GraduationCap, Palmtree,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -31,8 +32,10 @@ function Index() {
         <Hero />
         <Problem />
         <Talleres />
+        <Catalogo />
         <Corporativo />
         <Equipo />
+        <Filosofia />
         <PorQue />
         <Testimonios />
         <Contacto />
@@ -90,7 +93,7 @@ function Hero() {
         <div className="relative mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl">
           {[
             { k: "25+ años", v: "de experiencia comercial en Venezuela" },
-            { k: "3 programas", v: "de formación especializados" },
+            { k: "Programas", v: "de formación especializada" },
             { k: "Resultados", v: "desde el primer día" },
           ].map((m) => (
             <div
@@ -158,45 +161,106 @@ function Problem() {
 function Talleres() {
   const talleres = [
     {
+      rank: "#1",
+      medal: "🥇",
       icon: Award,
       title: "El cliente que no vuelve",
-      sub: "Atención al cliente de alto impacto",
+      sub: "Atención al cliente y experiencia del huésped",
       desc: "Descubre por qué tus clientes se van y cómo hacer que regresen. Técnicas aplicables desde mañana en tu negocio.",
-      duracion: "3 horas",
+      duracion: "4 horas",
       precio: "$35 USD por persona",
+      grupo: "15–25 participantes · Presencial",
       cta: "IMPULSA tu atención",
       msg: "Hola LIS, quiero inscribirme al taller El cliente que no vuelve. ¿Cómo procedo?",
       featured: false,
+      dirigido:
+        "Dueños de negocio, gerentes, supervisores y personal de atención al cliente de comercios, restaurantes, pymes y cualquier empresa que dependa de la experiencia del cliente para crecer.",
+      aprendes: [
+        "Por qué tus clientes no regresan — y qué hacer desde mañana para cambiar eso",
+        "Cómo leer al cliente y darle exactamente lo que necesita",
+        "Las frases que arruinan una venta de servicio sin que te des cuenta",
+        "Cómo convertir una queja en una oportunidad de fidelización",
+        "El protocolo de atención que hace que el cliente hable bien de ti — y te recomiende",
+      ],
+      llevas: [
+        "Protocolo de atención al cliente listo para implementar",
+        "Guía de manejo de quejas y clientes difíciles",
+        "Lista de verificación de experiencia del cliente para tu negocio",
+      ],
+      cambio:
+        "Al salir del taller, tu equipo sabe exactamente cómo hacer que un cliente que entra por primera vez quiera volver — y traer a otros.",
     },
     {
+      rank: "#2",
+      medal: "🥈",
       icon: Handshake,
       title: "Cierra más, esfuérzate menos",
-      sub: "Técnicas de venta efectiva",
+      sub: "Técnicas de venta efectiva para el mercado venezolano",
       desc: "Aprende a vender sin presión y sin guiones robóticos. Técnicas reales que funcionan con el cliente venezolano.",
-      duracion: "3 horas",
+      duracion: "4 horas",
       precio: "$35 USD por persona",
+      grupo: "15–25 participantes · Presencial",
       cta: "IMPULSA tus ventas",
       msg: "Hola LIS, quiero inscribirme al taller Cierra más esfuérzate menos. ¿Cómo procedo?",
       featured: true,
+      dirigido:
+        "Vendedores, asesores comerciales, dueños de negocio, emprendedores y cualquier persona que necesite vender — productos, servicios o ideas — en el mercado venezolano de hoy.",
+      aprendes: [
+        "Por qué el cliente dice «lo voy a pensar» y cómo evitar que se vaya sin comprar",
+        "Técnicas de cierre que funcionan sin presionar ni parecer desesperado",
+        "Cómo identificar lo que el cliente realmente quiere — no lo que dice que quiere",
+        "El manejo de objeciones de precio en Venezuela: «está caro» ya no te paraliza",
+        "Cómo construir una conversación de venta que fluye naturalmente hacia el sí",
+      ],
+      llevas: [
+        "Guía de técnicas de cierre adaptadas al mercado local",
+        "Script de manejo de las objeciones más comunes",
+        "Método de detección de necesidades en 3 preguntas",
+      ],
+      cambio:
+        "Al salir del taller, tienes un sistema de venta claro que puedes repetir, enseñar y mejorar — sin depender del talento natural ni del día.",
     },
     {
+      rank: "#3",
+      medal: "🥉",
       icon: Smartphone,
       title: "Tu negocio en digital",
-      sub: "Marketing digital aplicado",
+      sub: "Marketing digital aplicado para el mercado venezolano",
       desc: "Instagram, WhatsApp y Google para atraer clientes locales. Sin agencia. Sin presupuesto enorme.",
       duracion: "4 horas",
       precio: "$45 USD por persona",
+      grupo: "15–25 participantes · Presencial",
       cta: "IMPULSA tu Mercadeo Digital",
       msg: "Hola LIS, quiero inscribirme al taller Tu negocio en digital. ¿Cómo procedo?",
       featured: false,
+      dirigido:
+        "Dueños de negocio, emprendedores y profesionales independientes que quieren atraer más clientes usando Instagram, WhatsApp y Google — sin agencia, sin presupuesto enorme y sin ser expertos en tecnología.",
+      aprendes: [
+        "Cómo configurar Instagram y WhatsApp para que trabajen por ti mientras atiendes tu negocio",
+        "Qué publicar, cuándo y cómo — sin gastar horas frente al teléfono",
+        "Cómo aparecer en Google cuando alguien busca lo que tú vendes en tu ciudad",
+        "El método para convertir seguidores en clientes reales — no solo en likes",
+        "Cómo medir si tu marketing digital está funcionando o está desperdiciando tu tiempo",
+        "Automatizaciones con IA para tu negocio",
+      ],
+      llevas: [
+        "Plan de contenido de 30 días listo para publicar",
+        "Guía de configuración de WhatsApp paso a paso y bonus",
+        "Checklist de perfil digital (Instagram, WhatsApp, etc.) optimizado para vender",
+      ],
+      cambio:
+        "Al salir del taller, tienes un sistema digital básico funcionando — y sabes exactamente qué hacer cada semana para atraer clientes sin depender del voz a voz.",
     },
   ];
 
   return (
     <section id="talleres" className="bg-soft py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl md:text-5xl font-extrabold">Nuestros talleres</h2>
+        <div className="max-w-3xl">
+          <span className="inline-flex items-center gap-2 rounded-full bg-navy text-white px-3 py-1 text-xs font-semibold tracking-wide uppercase">
+            Programas destacados · Comercialización de Alto Impacto
+          </span>
+          <h2 className="mt-4 text-3xl md:text-5xl font-extrabold">Nuestros 3 talleres protagonistas</h2>
           <p className="mt-4 text-lg text-ink/75">
             Formación práctica para comercios, pymes y emprendedores. Grupos pequeños. Resultados inmediatos.
           </p>
@@ -212,15 +276,14 @@ function Talleres() {
                   : "border border-border hover:shadow-[0_8px_30px_rgba(13,27,75,0.08)]"
               }`}
             >
-              {t.featured && (
-                <span className="absolute -top-3 left-7 inline-flex rounded-full bg-navy text-white px-3 py-1 text-xs font-semibold">
-                  Más popular
-                </span>
-              )}
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-navy text-white">
-                <t.icon className="h-6 w-6" />
+              <div className="flex items-center justify-between">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-navy text-white">
+                  <t.icon className="h-6 w-6" />
+                </div>
+                <span className="text-2xl" aria-hidden>{t.medal}</span>
               </div>
-              <h3 className="mt-5 text-xl font-bold leading-tight">{t.title}</h3>
+              <div className="mt-4 text-xs font-bold text-mid uppercase tracking-wider">{t.rank} · Programa destacado</div>
+              <h3 className="mt-1 text-xl font-bold leading-tight">{t.title}</h3>
               <p className="mt-1 text-sm font-semibold text-mid">{t.sub}</p>
               <p className="mt-3 text-ink/75 leading-relaxed">{t.desc}</p>
 
@@ -233,7 +296,49 @@ function Talleres() {
                   <dt className="text-ink/60">Precio</dt>
                   <dd className="font-semibold text-navy text-right">{t.precio}</dd>
                 </div>
+                <div className="flex justify-between">
+                  <dt className="text-ink/60">Grupo</dt>
+                  <dd className="font-semibold text-navy text-right">{t.grupo}</dd>
+                </div>
               </dl>
+
+              <details className="mt-5 group">
+                <summary className="cursor-pointer list-none flex items-center justify-between rounded-lg bg-soft px-4 py-2.5 text-sm font-semibold text-navy hover:bg-soft/70 transition-colors">
+                  Ver detalle completo
+                  <ArrowRight className="h-4 w-4 transition-transform group-open:rotate-90" />
+                </summary>
+                <div className="mt-4 space-y-4 text-sm">
+                  <div>
+                    <h4 className="font-bold text-navy">¿A quién va dirigido?</h4>
+                    <p className="mt-1 text-ink/75 leading-relaxed">{t.dirigido}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-navy">¿Qué vas a aprender?</h4>
+                    <ul className="mt-2 space-y-1.5">
+                      {t.aprendes.map((a) => (
+                        <li key={a} className="flex gap-2 text-ink/80 leading-relaxed">
+                          <span className="text-mid font-bold shrink-0">›</span>
+                          <span>{a}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-navy">¿Qué te llevas?</h4>
+                    <ul className="mt-2 space-y-1.5">
+                      {t.llevas.map((l) => (
+                        <li key={l} className="flex gap-2 text-ink/80 leading-relaxed">
+                          <CheckCircle2 className="h-4 w-4 text-mid shrink-0 mt-0.5" />
+                          <span>{l}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="rounded-lg bg-navy/5 border-l-4 border-navy p-3">
+                    <p className="text-ink italic leading-relaxed">«{t.cambio}»</p>
+                  </div>
+                </div>
+              </details>
 
               <a
                 href={wa(t.msg)}
@@ -247,8 +352,21 @@ function Talleres() {
           ))}
         </div>
 
+        {/* Certificación */}
+        <div className="mt-10 rounded-2xl bg-white border border-border p-6 flex items-start gap-4">
+          <div className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-soft text-navy">
+            <GraduationCap className="h-6 w-6" />
+          </div>
+          <div>
+            <h3 className="text-lg font-bold text-navy">Certificación IMPULSA</h3>
+            <p className="mt-1 text-ink/75">
+              Todos los talleres otorgan un <span className="font-semibold text-navy">Certificado de participación IMPULSA</span> físico y digital.
+            </p>
+          </div>
+        </div>
+
         {/* Puente hacia corporativo */}
-        <div className="mt-12 rounded-2xl border-2 border-dashed border-navy/30 bg-white p-7 md:p-8 text-center">
+        <div className="mt-8 rounded-2xl border-2 border-dashed border-navy/30 bg-white p-7 md:p-8 text-center">
           <p className="text-lg md:text-xl font-bold text-navy max-w-3xl mx-auto">
             ¿Tienes más de 10 personas en tu equipo? Diseñamos el taller exclusivamente para tu organización.
           </p>
@@ -263,26 +381,75 @@ function Talleres() {
         </div>
 
         {/* Pack */}
-        <div className="mt-8 rounded-2xl bg-navy text-white p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div className="mt-8 rounded-2xl bg-navy text-white p-8 md:p-10">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wider text-mid">🎯 Pack 3 Talleres — Formación comercial de alto impacto</div>
+              <h3 className="mt-2 text-2xl md:text-3xl font-extrabold text-white">
+                $100 USD por persona · 12 horas
+              </h3>
+              <p className="mt-1 text-white/80">
+                Ahorra <span className="font-bold text-white">$25</span> vs. precio individual. 3 sesiones de 4 horas — en días consecutivos o distribuidos.
+              </p>
+              <p className="mt-2 text-sm text-white/75 max-w-2xl">
+                El pack completo de IMPULSA: atención al cliente, técnicas de venta y marketing digital. Todo lo que un negocio venezolano necesita para crecer de forma sostenida.
+              </p>
+            </div>
+            <a
+              href={wa("Hola LIS, quiero el Pack completo de los 3 talleres. ¿Cómo procedo?")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center justify-center gap-2 rounded-lg bg-white text-navy px-6 py-3.5 text-base font-semibold hover:bg-soft transition-colors"
+            >
+              Quiero el Pack completo <ArrowRight className="h-5 w-5" />
+            </a>
+          </div>
+          <ul className="mt-6 grid gap-2 md:grid-cols-3 text-sm text-white/85 border-t border-white/15 pt-5">
+            <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-mid shrink-0 mt-0.5" /> Prioridad en inscripción a otros talleres</li>
+            <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-mid shrink-0 mt-0.5" /> Grupo de seguimiento WhatsApp por 30 días</li>
+            <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-mid shrink-0 mt-0.5" /> Sesión grupal de seguimiento a las 4 semanas (1h)</li>
+          </ul>
+        </div>
+
+        {/* Modalidad empresarial intensiva */}
+        <div className="mt-8 rounded-2xl border-2 border-mid bg-white p-7 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-5">
           <div>
-            <div className="text-xs font-semibold uppercase tracking-wider text-mid">🎯 Pack 3 talleres</div>
-            <h3 className="mt-2 text-2xl md:text-3xl font-extrabold text-white">
-              $100 USD por persona · Los 3 talleres
+            <div className="text-xs font-semibold uppercase tracking-wider text-mid">Modalidad empresarial intensiva</div>
+            <h3 className="mt-1 text-xl md:text-2xl font-bold text-navy">
+              Programa completo en dos días — para empresas de todo el país en Margarita
             </h3>
-            <p className="mt-1 text-white/80">Inscríbete en los tres talleres y forma a tu equipo completo.</p>
+            <p className="mt-2 text-sm text-ink/75 max-w-2xl">
+              Llevamos el pack completo a tu empresa en formato intensivo de dos días seguidos. Contáctanos para más información.
+            </p>
           </div>
           <a
-            href={wa("Hola LIS, quiero el Pack completo de los 3 talleres. ¿Cómo procedo?")}
+            href={wa("Hola LIS, quiero información sobre el programa completo de dos días para mi empresa")}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center justify-center gap-2 rounded-lg bg-white text-navy px-6 py-3.5 text-base font-semibold hover:bg-soft transition-colors"
+            className="shrink-0 inline-flex items-center justify-center gap-2 rounded-lg bg-navy text-white px-5 py-3 text-sm font-semibold hover:bg-corp transition-colors"
           >
-            Quiero el Pack completo <ArrowRight className="h-5 w-5" />
+            Quiero más información <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+
+        {/* Vivencias empresariales — franja destacada */}
+        <div className="mt-8 rounded-2xl bg-gradient-to-r from-navy via-corp to-navy text-white p-8 md:p-10 text-center">
+          <Palmtree className="h-10 w-10 mx-auto text-mid" />
+          <p className="mt-4 text-xl md:text-2xl font-extrabold uppercase tracking-wide leading-tight">
+            Organizamos vivencias empresariales en Margarita para transformar tus equipos de atención y comerciales.
+          </p>
+          <a
+            href={wa("Hola LIS, quiero información sobre vivencias empresariales en Margarita para mi equipo")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-white text-navy px-6 py-3.5 text-base font-semibold hover:bg-soft transition-colors"
+          >
+            Quiero vivir la experiencia <ArrowRight className="h-5 w-5" />
           </a>
         </div>
 
         {/* Próximo taller */}
-        <div className="mt-8 rounded-2xl border-2 border-mid bg-white p-7 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-5">
+        <div className="mt-8 rounded-2xl border border-border bg-white p-7 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-5">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-mid">Próximo taller</div>
             <h3 className="mt-1 text-xl md:text-2xl font-bold text-navy">
@@ -298,6 +465,72 @@ function Talleres() {
             Avísame cuando abra
           </a>
         </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- CATÁLOGO COMPLETO ---------------- */
+function Catalogo() {
+  const programas = [
+    { n: 1, name: "Atención al cliente y experiencia del huésped", status: "Disponible" },
+    { n: 2, name: "Técnicas de venta para el comercio", status: "Disponible" },
+    { n: 3, name: "Mercadeo digital para negocios", status: "Disponible" },
+    { n: 4, name: "Liderazgo para supervisores y gerentes medios", status: "Próximamente" },
+    { n: 5, name: "Gestión del tiempo y productividad personal", status: "Próximamente" },
+    { n: 6, name: "Finanzas y flujo de caja para empresas y emprendedores", status: "Próximamente" },
+    { n: 7, name: "Comunicación efectiva e inteligencia emocional", status: "Próximamente" },
+    { n: 8, name: "IA y automatización para negocios", status: "Próximamente" },
+    { n: 9, name: "Transformación digital para la empresa", status: "Próximamente" },
+  ];
+  return (
+    <section id="catalogo" className="bg-white py-16 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl">
+          <span className="inline-flex items-center gap-2 rounded-full bg-soft text-navy px-3 py-1 text-xs font-semibold tracking-wide uppercase">
+            <BookOpen className="h-3.5 w-3.5" /> Catálogo completo
+          </span>
+          <h2 className="mt-4 text-2xl md:text-4xl font-extrabold">Todos nuestros programas</h2>
+          <p className="mt-3 text-ink/70">
+            La amplitud de la oferta IMPULSA. Los 3 primeros están disponibles ahora; los demás se incorporan progresivamente.
+          </p>
+        </div>
+
+        <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {programas.map((p) => {
+            const isActive = p.status === "Disponible";
+            return (
+              <li
+                key={p.n}
+                className={`rounded-xl border p-4 flex items-start gap-3 transition-colors ${
+                  isActive
+                    ? "border-navy/30 bg-soft"
+                    : "border-border bg-white"
+                }`}
+              >
+                <div
+                  className={`shrink-0 h-9 w-9 rounded-lg flex items-center justify-center font-bold text-sm ${
+                    isActive ? "bg-navy text-white" : "bg-soft text-ink/50"
+                  }`}
+                >
+                  {p.n}
+                </div>
+                <div className="min-w-0">
+                  <div className={`font-semibold leading-snug ${isActive ? "text-navy" : "text-ink/70"}`}>
+                    {p.name}
+                  </div>
+                  <div
+                    className={`mt-1 text-xs font-semibold uppercase tracking-wider ${
+                      isActive ? "text-mid" : "text-ink/40"
+                    }`}
+                  >
+                    {p.status}
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );
@@ -443,6 +676,80 @@ function Equipo() {
         <p className="mt-10 text-center text-sm text-ink/60">
           IMPULSA es una iniciativa de Transformación Digital US
         </p>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- FILOSOFÍA (Misión, Visión, Valores) ---------------- */
+function Filosofia() {
+  const valores = [
+    {
+      title: "Resultados sobre diplomas",
+      desc: "No medimos el éxito por horas de clase sino por lo que cambia en el negocio del cliente. Si no hay resultado, fallamos nosotros.",
+    },
+    {
+      title: "Honestidad comercial",
+      desc: "No vendemos lo que no podemos entregar. No prometemos transformaciones mágicas. Prometemos herramientas reales a aplicar con disciplina.",
+    },
+    {
+      title: "Crecimiento continuo",
+      desc: "Le exigimos a nuestros clientes que mejoren. Nos exigimos lo mismo. IMPULSA se actualiza, aprende y evoluciona con el mercado.",
+    },
+    {
+      title: "Cercanía sin perder profesionalismo",
+      desc: "Conectamos como personas. Entregamos con excelencia.",
+    },
+  ];
+  return (
+    <section id="filosofia" className="bg-navy text-white py-20 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl">
+          <span className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur px-3 py-1 text-xs font-semibold tracking-wide uppercase">
+            <Compass className="h-3.5 w-3.5" /> Nuestra filosofía
+          </span>
+          <h2 className="mt-4 text-3xl md:text-5xl font-extrabold text-white">Quiénes somos por dentro</h2>
+          <p className="mt-4 text-lg text-white/80">
+            Lo que nos mueve, hacia dónde vamos y los principios con los que trabajamos todos los días.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-mid text-navy">
+              <Target className="h-6 w-6" />
+            </div>
+            <h3 className="mt-5 text-2xl font-extrabold text-white">Misión</h3>
+            <p className="mt-3 text-white/85 leading-relaxed">
+              Transformar equipos comerciales en generadores de crecimiento real, a través de capacitación y mentoría orientadas a resultados y aplicables desde el primer día.
+            </p>
+          </div>
+          <div className="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-mid text-navy">
+              <Eye className="h-6 w-6" />
+            </div>
+            <h3 className="mt-5 text-2xl font-extrabold text-white">Visión</h3>
+            <p className="mt-3 text-white/85 leading-relaxed">
+              Ser la consultora de formación comercial de referencia en Venezuela para 2028, reconocida por transformar el desempeño de empresas y equipos mediante metodologías de alto impacto, optimización de procesos y resultados medibles, formando una nueva generación de profesionales comerciales y de servicio altamente efectivos.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <div className="flex items-center gap-3">
+            <Scale className="h-6 w-6 text-mid" />
+            <h3 className="text-2xl font-extrabold text-white">Valores</h3>
+          </div>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
+            {valores.map((v, i) => (
+              <div key={v.title} className="rounded-2xl bg-white/10 border border-white/10 p-6 hover:bg-white/[0.13] transition-colors">
+                <div className="text-xs font-bold text-mid uppercase tracking-wider">0{i + 1}</div>
+                <h4 className="mt-2 text-lg font-bold text-white">{v.title}</h4>
+                <p className="mt-2 text-white/80 leading-relaxed text-sm">{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
