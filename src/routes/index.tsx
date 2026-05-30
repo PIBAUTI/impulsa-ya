@@ -17,6 +17,23 @@ import lisveronica from "@/assets/lisveronica.png";
 import lisbarbara from "@/assets/lisbarbara.png";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [{ rel: "canonical", href: "https://impulsa-ya.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Talleres de formación comercial IMPULSA",
+          provider: { "@type": "Organization", name: "IMPULSA" },
+          areaServed: "Venezuela",
+          serviceType: "Capacitación en ventas, atención al cliente y marketing digital",
+          description: "Programas de formación especializada para equipos comerciales y de atención al cliente.",
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
