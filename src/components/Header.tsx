@@ -33,7 +33,7 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <img src={logo} alt="IMPULSA" width={40} height={40} className="h-10 w-10 object-contain" />
+          <img src={logo} alt="Logo de IMPULSA — Formación Comercial" width={40} height={40} className="h-10 w-10 object-contain" />
           <span className="impulsa-mark text-xl text-navy">IMPULSA</span>
         </Link>
 
