@@ -10,7 +10,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
               <div className="h-12 w-12 rounded-lg bg-white p-1.5 flex items-center justify-center">
-                <img src={logo} alt="IMPULSA" className="h-full w-full object-contain" />
+                <img src={logo} alt="Logo de IMPULSA Crecimiento Comercial" className="h-full w-full object-contain" />
               </div>
               <span className="impulsa-mark text-2xl">IMPULSA</span>
             </div>
