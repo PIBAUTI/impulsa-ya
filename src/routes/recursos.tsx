@@ -6,9 +6,27 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/recursos")({
   head: () => ({
     meta: [
-      { title: "Recursos — IMPULSA" },
-      { name: "description", content: "Tips, casos y herramientas para vender más y atender mejor." },
+      { title: "Recursos para equipos comerciales — IMPULSA" },
+      { name: "description", content: "Tips, casos y herramientas prácticas para que tu equipo venda más y atienda mejor a los clientes." },
+      { property: "og:title", content: "Recursos para equipos comerciales — IMPULSA" },
+      { property: "og:description", content: "Tips, casos y herramientas prácticas para que tu equipo venda más y atienda mejor a los clientes." },
+      { property: "og:url", content: "https://impulsa-ya.lovable.app/recursos" },
+      { name: "twitter:title", content: "Recursos para equipos comerciales — IMPULSA" },
+      { name: "twitter:description", content: "Tips, casos y herramientas prácticas para que tu equipo venda más y atienda mejor a los clientes." },
       { name: "robots", content: "noindex" },
+    ],
+    links: [{ rel: "canonical", href: "https://impulsa-ya.lovable.app/recursos" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Recursos para equipos comerciales",
+          url: "https://impulsa-ya.lovable.app/recursos",
+          description: "Tips, casos y herramientas para vender más y atender mejor.",
+        }),
+      },
     ],
   }),
   component: Recursos,
