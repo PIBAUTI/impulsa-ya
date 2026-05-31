@@ -18,7 +18,7 @@ export function Footer() {
               <span className="impulsa-mark text-white">Acciones que IMPULSAn</span>{" "}
               <span className="font-normal">empresas</span>
             </p>
-            <p className="mt-4 text-sm text-white/60 max-w-md">
+            <p className="mt-4 text-sm text-white/80 max-w-md">
               Calle Edison, Torre del C.C. Los Chaguaramos, Piso 19, Ofic. 19-5,
               Los Chaguaramos, Caracas 1040, DC, Venezuela
             </p>
@@ -60,7 +60,7 @@ export function Footer() {
               href={WA_DEFAULT}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 block text-sm text-white/60 hover:text-white transition-colors"
+              className="mt-4 block text-sm text-white/80 hover:text-white transition-colors"
             >
               +58 424 267 0624
             </a>
@@ -68,7 +68,7 @@ export function Footer() {
               href="https://www.impulsa.com.ve"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-sm text-white/60 hover:text-white transition-colors"
+              className="block text-sm text-white/80 hover:text-white transition-colors"
             >
               www.impulsa.com.ve
             </a>
@@ -76,7 +76,7 @@ export function Footer() {
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-sm text-white/60 hover:text-white transition-colors"
+              className="block text-sm text-white/80 hover:text-white transition-colors"
             >
               @IMPULSAcrecimiento
             </a>
@@ -86,7 +86,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 text-xs text-white/50 text-center">
+        <div className="mt-12 pt-6 border-t border-white/10 text-xs text-white/75 text-center">
           © 2026 IMPULSA · Una iniciativa de Transformación Digital US · Todos los derechos reservados
         </div>
       </div>

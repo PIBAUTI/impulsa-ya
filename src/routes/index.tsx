@@ -527,7 +527,7 @@ function Catalogo() {
               >
                 <div
                   className={`shrink-0 h-9 w-9 rounded-lg flex items-center justify-center font-bold text-sm ${
-                    isActive ? "bg-navy text-white" : "bg-soft text-ink/50"
+                    isActive ? "bg-navy text-white" : "bg-soft text-ink/70"
                   }`}
                 >
                   {p.n}
@@ -538,7 +538,7 @@ function Catalogo() {
                   </div>
                   <div
                     className={`mt-1 text-xs font-semibold uppercase tracking-wider ${
-                      isActive ? "text-mid" : "text-ink/40"
+                      isActive ? "text-mid" : "text-ink/60"
                     }`}
                   >
                     {p.status}
@@ -793,7 +793,7 @@ function PorQue() {
               <CheckCircle2 className="h-5 w-5 text-mid" /> IMPULSA
             </div>
             <div className="px-5 py-4 font-bold flex items-center gap-2 border-l border-white/10">
-              <XCircle className="h-5 w-5 text-white/60" /> Otros
+              <XCircle className="h-5 w-5 text-white/80" /> Otros
             </div>
           </div>
           {rows.map(([a, b], i) => (
@@ -806,7 +806,7 @@ function PorQue() {
                 <span className="font-semibold text-navy">{a}</span>
               </div>
               <div className="px-5 py-4 text-sm md:text-base text-ink/70 border-l border-border flex items-start gap-2">
-                <XCircle className="h-5 w-5 text-ink/40 shrink-0 mt-0.5" />
+                <XCircle className="h-5 w-5 text-ink/60 shrink-0 mt-0.5" />
                 <span>{b}</span>
               </div>
             </div>
@@ -858,7 +858,7 @@ function Testimonios() {
               </blockquote>
               <figcaption className="mt-5 pt-5 border-t border-white/10">
                 <div className="font-bold text-white">{it.name}</div>
-                <div className="text-sm text-white/60">{it.role}</div>
+                <div className="text-sm text-white/80">{it.role}</div>
               </figcaption>
             </figure>
           ))}
