@@ -275,7 +275,7 @@ function Landing() {
                     </div>
                     <div className="sm:border-l sm:border-border sm:pl-5">
                       <div className="text-xs font-bold uppercase tracking-wider text-gold-dark">
-                        Sales sabiendo
+                        Saldrás sabiendo
                       </div>
                       <p className="mt-1 text-navy font-semibold">{t.to}</p>
                     </div>
