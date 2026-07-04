@@ -41,17 +41,21 @@
   --color-mid: var(--mid);
   --color-soft: var(--soft);
   --color-ink: var(--ink);
+  --color-gold: var(--gold);
+  --color-gold-dark: var(--gold-dark);
 }
 
 :root {
   --radius: 0.5rem;
 
   /* IMPULSA brand */
-  --navy: #0D1B4B;
+  --navy: #1A237E;
   --corp: #1A5276;
   --mid: #2E86C1;
   --soft: #F4F6F8;
   --ink: #2C3E50;
+  --gold: #F9A825;
+  --gold-dark: #C88A1F;
 
   --background: #FFFFFF;
   --foreground: #2C3E50;
