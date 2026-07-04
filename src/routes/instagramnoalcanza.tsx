@@ -16,8 +16,8 @@ import {
   Ticket,
   Heart,
 } from "lucide-react";
-import salonAsset from "@/assets/salon-ucs.png.asset.json";
-import logoAsset from "@/assets/logo-impulsa-new.jpg.asset.json";
+const salonAsset = { url: "/hero-salon.png" };
+const logoAsset = { url: "/logo-impulsa.jpeg" };
 
 const WA_URL =
   "https://wa.me/584242670624?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20taller%20Cuando%20Instagram%20No%20Alcanza";
