@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RecursosRouteImport } from './routes/recursos'
+import { Route as InstagramnoalcanzaRouteImport } from './routes/instagramnoalcanza'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -23,6 +24,11 @@ const RecursosRoute = RecursosRouteImport.update({
   path: '/recursos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InstagramnoalcanzaRoute = InstagramnoalcanzaRouteImport.update({
+  id: '/instagramnoalcanza',
+  path: '/instagramnoalcanza',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/instagramnoalcanza': typeof InstagramnoalcanzaRoute
   '/recursos': typeof RecursosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/instagramnoalcanza': typeof InstagramnoalcanzaRoute
   '/recursos': typeof RecursosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/instagramnoalcanza': typeof InstagramnoalcanzaRoute
   '/recursos': typeof RecursosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/recursos' | '/sitemap.xml'
+  fullPaths: '/' | '/instagramnoalcanza' | '/recursos' | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/recursos' | '/sitemap.xml'
-  id: '__root__' | '/' | '/recursos' | '/sitemap.xml'
+  to: '/' | '/instagramnoalcanza' | '/recursos' | '/sitemap.xml'
+  id: '__root__' | '/' | '/instagramnoalcanza' | '/recursos' | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  InstagramnoalcanzaRoute: typeof InstagramnoalcanzaRoute
   RecursosRoute: typeof RecursosRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RecursosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/instagramnoalcanza': {
+      id: '/instagramnoalcanza'
+      path: '/instagramnoalcanza'
+      fullPath: '/instagramnoalcanza'
+      preLoaderRoute: typeof InstagramnoalcanzaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  InstagramnoalcanzaRoute: InstagramnoalcanzaRoute,
   RecursosRoute: RecursosRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
