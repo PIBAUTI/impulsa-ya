@@ -196,6 +196,10 @@ function Landing() {
         </div>
       </header>
 
+      <div className="w-full bg-red-600 text-white text-center font-extrabold uppercase tracking-widest py-3 px-4 text-sm sm:text-base">
+        Agotado
+      </div>
+
       <main id="top">
         <section className="relative isolate overflow-hidden">
           <img
